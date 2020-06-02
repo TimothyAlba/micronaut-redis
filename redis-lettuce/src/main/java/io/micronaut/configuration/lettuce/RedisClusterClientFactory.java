@@ -38,7 +38,7 @@ import java.util.List;
 @Requires(property = RedisSetting.REDIS_URIS)
 @Singleton
 @Factory
-public class DefaultRedisClusterClientFactory {
+public class RedisClusterClientFactory {
 
     /**
      * Create the client based on config URIs.

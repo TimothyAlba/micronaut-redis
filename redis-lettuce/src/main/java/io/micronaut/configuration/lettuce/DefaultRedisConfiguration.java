@@ -27,6 +27,5 @@ import io.micronaut.context.annotation.Requires;
  */
 @ConfigurationProperties(RedisSetting.PREFIX)
 @Primary
-@Requires(property = RedisSetting.PREFIX)
 public class DefaultRedisConfiguration extends AbstractRedisConfiguration {
 }

@@ -31,10 +31,10 @@ import javax.inject.Singleton;
  * @author Graeme Rocher
  * @since 1.0
  */
-@Requires(beans = DefaultRedisConfiguration.class)
+@Requires(property = RedisSetting.REDIS_URI)
 @Singleton
 @Factory
-public class DefaultRedisClientFactory extends AbstractRedisClientFactory {
+public class RedisClientFactory extends AbstractRedisClientFactory {
 
     @Bean(preDestroy = "shutdown")
     @Singleton
